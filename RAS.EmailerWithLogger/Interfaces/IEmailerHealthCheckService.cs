@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace RAS.EmailerWithLogger.Services
+namespace RAS.EmailerWithLogger.Interfaces
 {
     public interface IEmailerHealthCheckService
     {

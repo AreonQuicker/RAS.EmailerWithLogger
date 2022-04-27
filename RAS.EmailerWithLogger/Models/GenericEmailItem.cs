@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace RAS.EmailerWithLogger.Services
+namespace RAS.EmailerWithLogger.Models
 {
     public class GenericEmailItem : EmailItemBase
     {
@@ -14,7 +14,8 @@ namespace RAS.EmailerWithLogger.Services
         }
 
         [JsonProperty("substitutions")]
-        public Dictionary<string, string> Substitutions => new() {{"<%Title%>", Title}, {"<%Subject%>", Subject}, {"<%Body%>", Body}};
+        public Dictionary<string, string> Substitutions => new()
+            {{"<%Title%>", Title}, {"<%Subject%>", Subject}, {"<%Body%>", Body}};
 
         public string Title { get; set; }
         public string Body { get; set; }

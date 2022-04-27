@@ -37,6 +37,9 @@ namespace RAS.EmailerWithLogger.Services
             var emailLogs = (await _emailLogService.GetAsync(dateNow.Year, dateNow.Month, dateNow.Day))
                 .Where(w => w.CreatedDate >= dateNow.AddMinutes(Math.Abs(forLastMinutes) * -1)).ToList();
 
+            if (!emailLogs.Any())
+                return false;
+
             if (emailLogs.Any(a => a.StatusEnum == EmailerStatusEnum.Failed))
                 return false;
 

@@ -1,4 +1,9 @@
-﻿namespace RAS.EmailerWithLogger.HealthChecks
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using RAS.EmailerWithLogger.Interfaces;
+
+namespace RAS.EmailerWithLogger.HealthChecks
 {
     public class EmailTodayHealthCheck : IHealthCheck
     {

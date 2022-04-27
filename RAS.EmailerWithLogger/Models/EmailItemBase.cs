@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using RAS.Emailer.Interfaces;
 using RAS.Emailer.Models;
 
-namespace RAS.EmailerWithLogger.Services
+namespace RAS.EmailerWithLogger.Models
 {
     public abstract class EmailItemBase : IEmailItem
     {
@@ -18,7 +18,6 @@ namespace RAS.EmailerWithLogger.Services
         public abstract string TemplateId { get; }
         public List<string> ToEmails { get; init; }
         public string Subject { get; set; }
-
-        public File File { get; set; }
+        public RAS.Emailer.Models.File File { get; set; }
     }
 }

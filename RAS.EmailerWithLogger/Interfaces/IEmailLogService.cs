@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using RAS.EmailerWithLogger.DomainModels;
 
-namespace RAS.EmailerWithLogger.Services
+namespace RAS.EmailerWithLogger.Interfaces
 {
     public interface IEmailLogService
     {

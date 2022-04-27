@@ -2,6 +2,8 @@
 {
     public enum EmailerStatusEnum
     {
-        
+        Pending,
+        Sent,
+        Failed
     }
 }
