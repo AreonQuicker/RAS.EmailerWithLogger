@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Authors>Gideon (Entelect)</Authors>
+        <PackageId>E.S.EmailerWithLogger</PackageId>
+        <PackageVersion>6.0.1</PackageVersion>
+        <Description>E.S.EmailerWithLogger</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="E.S.Api.Helpers" Version="6.0.0" />
+        <PackageReference Include="E.S.Data.Query.Context" Version="6.0.12" />
+        <PackageReference Include="E.S.Data.Query.Context.DI" Version="6.0.1" />
+        <PackageReference Include="E.S.Logging" Version="6.0.5" />
+        <PackageReference Include="RAS.Emailer" Version="4.0.9" />
+        <PackageReference Include="AspNetCore.HealthChecks.UI" Version="6.0.5" />
+        <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="6.0.5" />
+    </ItemGroup>
+
+</Project>
